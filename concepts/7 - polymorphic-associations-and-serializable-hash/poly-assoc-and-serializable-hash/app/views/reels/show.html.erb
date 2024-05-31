@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @reel %>
+
+<div>
+  <%= link_to "Edit this reel", edit_reel_path(@reel) %> |
+  <%= link_to "Back to reels", reels_path %>
+
+  <%= button_to "Destroy this reel", @reel, method: :delete %>
+</div>

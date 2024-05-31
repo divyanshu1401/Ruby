@@ -1,0 +1,14 @@
+<div id="<%= dom_id cricketer %>">
+  <p>
+    <strong>Name:</strong>
+    <%= cricketer.name %>
+  </p>
+
+  <%= cricketer.body %>
+  <br/>
+  <%= link_to image_tag(cricketer.image_as_thumbnail), cricketer.image %>
+  <hr />
+  <%cricketer.pictures_as_thumbnail.each do |picture|%>
+    <%= link_to image_tag(picture), picture %>
+  <%end%>
+</div>

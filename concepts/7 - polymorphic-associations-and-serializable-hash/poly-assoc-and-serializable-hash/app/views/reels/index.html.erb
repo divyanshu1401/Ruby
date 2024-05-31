@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Reels</h1>
+
+<div id="reels">
+  <% @reels.each do |reel| %>
+    <%= render reel %>
+    <p>
+      <%= link_to "Show this reel", reel %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New reel", new_reel_path %>
